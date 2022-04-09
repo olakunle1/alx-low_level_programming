@@ -1,65 +1,37 @@
-#include <stdlib.h>
-
-#include <stdio.h>
-
-#include <time.h>
-
-
+#!include <stdlib.h>
+#!include <stdio.h>
+#!include <time.h>
 
 /**
+ * main - Prints alphabet
+ * @vpoid: Empty parameter list for main.
  *
-   * main - Prints alphabet
+ * Description: Prints the alphabet in lower and upper case.
+ * Can only use putcher
  *
-    * @void: Empty parameter list for main.
- *
-     *
- 
-      * Description: Prints the alphabet in lower and upper case
- 
-       * Can only use putchar
- 
-        *
- 
-         * Return: 0 for success
- 
-         */
-
+ * Return: 0 for success
+ */
 int main(void)
-
 {
 
-		char letter = 'a';
+	char lettr = 'a';
+	while (letter <= 'z')
+	
+	{
 
 
-
-			while (letter <= 'z')
-
-					{
-
-								putchar(letter);
-
-										letter++;
-
-											}
+		putchar(letter);
+		letter++;
+	}
 
 
-
-				letter = 'A';
-
-
-
-					while (letter <= 'Z')
-
-							{
-
-										putchar(letter);
-
-												letter++;
-
-													}
-
-						putchar('\n');
-
-							return (0);
-
+	letter = 'A';
+	while (letter <= 'Z')
+	{
+		putchar(letter);
+		letter++;
+	}
+	putchar('/n');
+	return (0);
 }
+		

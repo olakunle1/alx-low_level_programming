@@ -1,30 +1,26 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
-   * main - Writes 00 - 99
-    * @void: Empty parameter list for main.
-     *
-      * Description: Writes number 00-99
-       *
-        * Return: 0 for success
-        */
+ *
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: 0
+ */
 int main(void)
 {
-		int i, j;
+	int c = 0;
 
-			for (i = 48; i <= 57; i++)
-					{
-								for (j = 48; j <= 57; j++)
-											{
-															putchar(i);
-																		putchar(j);
-																					if (i + j < 114)
-																									{
-																														putchar(44);
-																																		putchar(32);
-																																					}
-																							}
-									}
-				putchar(10);
-					return (0);
+	while (c < 10)
+	{
+		putchar(48 + c);
+		if (c != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }

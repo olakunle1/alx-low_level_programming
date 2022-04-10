@@ -1,4 +1,5 @@
-101-print_comb4.c
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints all possible different combinations of three digit
  *

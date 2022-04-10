@@ -1,25 +1,17 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
-
 /**
-   * main - Prints alphabet
-    * @void: Empty parameter list for main.
-     *
-      * Description: Prints the alphabet in reverse order
-       * Can only use putchar
-        *
-         * Return: 0 for success
-         */
+ * main - prints all single digit numbers of base 10 starting from 0,
+ * followed by a new line, using putcha
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-		char letter = 'z';
+		int n;
 
-			while (letter >= 'a')
-					{
-								putchar(letter);
-										letter--;
-											}
-				putchar('\n');
-					return (0);
+		for (n = 48; n < 58; n++)
+		{
+			putchar(n);
+		}
+			putchar('\n');
+		return (0);
 }

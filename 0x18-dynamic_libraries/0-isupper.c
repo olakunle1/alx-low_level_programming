@@ -1,7 +1,6 @@
 #include "main.h"
 /*
- * Auth: Agbiawoei Michael Ifiekemi
- */
+ * Auth: olakunle*/
 
 /**
  * _isupper - A function that checks for uppercase character.
